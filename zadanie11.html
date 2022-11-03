@@ -1,0 +1,27 @@
+﻿   <html>
+  <body>
+<div style="color:red;font-size:50px;">
+  <script language="JavaScript">
+var liczba1=prompt("c=","");
+var liczba2=prompt("b=","");
+var c_bog=parseFloat(liczba1);
+var b_bog=parseFloat(liczba2);
+
+document.write("c="+c_bog+"<br>");
+document.write("b="+b_bog+"<br>");
+ a_bog=Math.sqrt(c_bog*c_bog-b_bog*b_bog);
+document.write("a_bog="+a_bog.toFixed(2)+"<br>");
+
+P_bog=a_bog*b_bog/2
+document.write("Pole="+P_bog.toFixed(2)+"cm^2"+"<br>");
+
+Obw_bog=a_bog+b_bog+c_bog
+document.write("Obw="+Obw_bog.toFixed(2)+"cm"+"<br>");
+
+sin_beta=b_bog/c_bog;
+beta_bog=math.aSin(sin_beta)*180/Math.PI;
+document.write("Beta="+beta_bog.toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>

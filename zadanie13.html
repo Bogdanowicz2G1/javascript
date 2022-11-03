@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div style="color:violet;font-size:13mm;">
+<script language="JavaScript">
+     var liczba1=prompt("podaj c=","");
+     var liczba2=prompt("podaj b=","");
+     var c_bog=parseFloat(liczba1);
+     var b_bog=parseFloat(liczba2);
+document.write("C="+c_bog.toFixed(2)+"cm"+"<br>");
+document.write("B="+b_bog.toFixed(2)+"cm"+"<br>");
+var a_bog=Math.sqrt(Math.pow(c_bog,2)-Math.pow(b_bog,2));
+document.write("A="+a_bog.toFixed(2)+"cm"+"<br>");
+// Oblicz obw i pole pamietaj o jednostkach sin_alfa_bog=b_bog/c_bog
+sin_alfa_bog=b_bog/c_bog;
+document.write("sin(a)="+sin_alfa_bog.toFixed(3)+"<br>");
+alfa_bog=Math.asin(b_bog/c_bog)*(180/Math.PI);
+document.write("alfa="+alfa_bog.toFixed(2)+" st"+"<br");
+</script>
+</div>
+</body>
+</html>
